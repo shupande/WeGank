@@ -1,0 +1,30 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/submit/submit"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeGank-干货集中营",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "image/home.png",
+      "selectedIconPath": "image/home_HL.png",
+      "text": "干货集中营"
+    }, {
+      "pagePath": "pages/submit/submit",
+      "iconPath": "image/add.png",
+      "selectedIconPath": "image/add_HL.png",
+      "text": "提交干货"
+    }]
+  }
+}

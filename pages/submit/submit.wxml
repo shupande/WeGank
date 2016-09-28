@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view class="container">
+    <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="section-title">
+     <view class="lovely">
+        <image style="width: 164px; height: 70px;" mode="{{item.mode}}" src="{{src}}"></image>
+     </view>
+     <text class="title">{{text}}</text>
+    </view>
+    <view class="section-write">
+      <view class="section__title">地址:</view>
+      <input name="input" placeholder="干货的URL地址" />
+      <view class="section__title">描述:</view>
+      <input name="input" placeholder="最少5个字" />
+    </view>
+    <view class="section-picker">
+    <!--<view class="section__title">选择分类</view>-->
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">
+        选择干货分类：<text class="selected">{{array[index]}}</text>
+      </view>
+    </picker>
+    </view>
+     <view class="section-button">
+      <button type="primary" formType="submit">(｡◕∀◕｡) 发射!</button>
+      <button type="warn" formType="reset">重填</button>
+    </view>
+  </form>
+</view>
