@@ -3,4 +3,18 @@
   <loading hidden="{{hidden}}" bindchange="loadingChange">
     加载中...
   </loading>
+  <scroll-view scroll-y="true">
+    <view class="item" bindtap="itemClick">
+      <image model="scaleToFill"  src="{{imgurl}}"></image>
+      <text class="gank-title">{{title}}</text>
+    </view>
+    <view class="item" bindtap="itemClick">
+      <image model="scaleToFill"  src="{{imgurl}}"></image>
+      <text class="gank-title">{{title}}</text>
+    </view>
+    <view class="item" bindtap="itemClick">
+      <image model="scaleToFill"  src="{{imgurl}}"></image>
+      <text class="gank-title">{{title}}</text>
+    </view>
+  </scroll-view>
 </view>

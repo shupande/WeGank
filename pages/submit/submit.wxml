@@ -3,7 +3,7 @@
     <form bindsubmit="formSubmit" bindreset="formReset">
     <view class="section-title">
      <view class="lovely">
-        <image style="width: 164px; height: 70px;" mode="{{item.mode}}" src="{{src}}"></image>
+        <image style="width: 164px; height: 70px;"  mode="{{item.mode}}" src="{{src}}"></image>
      </view>
      <text class="title">{{text}}</text>
     </view>
@@ -17,7 +17,7 @@
     <!--<view class="section__title">选择分类</view>-->
     <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
       <view class="picker">
-        选择干货分类：<text class="selected">{{array[index]}}</text>
+        点我选择干货分类：<text class="selected">{{array[index]}}</text>
       </view>
     </picker>
     </view>
