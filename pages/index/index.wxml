@@ -5,16 +5,16 @@
   </loading>
   <scroll-view scroll-y="true">
     <view class="item" bindtap="itemClick">
-      <image model="scaleToFill"  src="{{imgurl}}"></image>
       <text class="gank-title">{{title}}</text>
+      <image class="fuli-image" model="top"  src="http://ws4.sinaimg.cn/large/610dc034jw1f8bc5c5n4nj20u00irgn8.jpg"></image>
     </view>
     <view class="item" bindtap="itemClick">
-      <image model="scaleToFill"  src="{{imgurl}}"></image>
       <text class="gank-title">{{title}}</text>
+      <image class="fuli-image" model="top"  src="{{imgurl}}"></image>
     </view>
     <view class="item" bindtap="itemClick">
-      <image model="scaleToFill"  src="{{imgurl}}"></image>
       <text class="gank-title">{{title}}</text>
+      <image class="fuli-image" model="top"  src="http://ws3.sinaimg.cn/large/610dc034jw1f88ylsqjvqj20u011hn5i.jpg"></image>
     </view>
   </scroll-view>
 </view>

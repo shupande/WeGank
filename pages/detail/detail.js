@@ -1,11 +1,35 @@
 Page({
   data: {
-    hello: 'hello world'
+    modalHidden: true,
+    toastHidden: true,
+    items:[]
   },
-  formSubmit: function(e) {
-    console.log('form发生了submit事件，携带数据为：', e.detail.value)
+  modalTap: function(e) {
+    this.setData({
+      modalHidden: false
+    })
   },
-  formReset: function() {
-    console.log('form发生了reset事件')
+  modalChange: function(e){
+    this.setData({
+      modalHidden: true
+    })
+  },
+  saveImage: function(e){
+    this.setData({
+      modalHidden: true,
+      toastHidden: false
+    });
+    console.log("保存图片");
+  },
+  toastChange: function(e){
+    console.log("toast");
+    this.setData({
+      toastHidden: true
+    })
+  },
+  openUrl: function(e){
+    wx.navigateTo({
+      url: 'https://github.com/Bouke/SwiftInitializerGenerator'
+   });
   }
 })

@@ -1,4 +1,30 @@
 <!--index.wxml-->
 <view class="container">
-  <text>{{hello}}</text>
+  <image bindtap="modalTap" mode="aspectFit" src="http://ws4.sinaimg.cn/large/610dc034jw1f8bc5c5n4nj20u00irgn8.jpg"></image>
+  <modal class="image-model" title="出发去旅行" confirm-text="保存" cancel-text="取消" hidden="{{modalHidden}}" bindconfirm="saveImage" bindcancel="modalChange">
+      <view>
+      <image class="full-image" mode="aspectFit" src="http://ws1.sinaimg.cn/large/610dc034jw1f867mvc6qjj20u00u0wh7.jpg"></image>
+      </view>
+  </modal>
+  <toast hidden="{{toastHidden}}" duration="1500" bindchange="toastChange">
+    保存成功
+  </toast>
+  <scroll-view scroll-y="true">
+    <view class="item">
+      <text class="type-title">iOS</text>
+      <view>
+        <text class="content" bindtap="openUrl">1、Swift Protobuf 插件</text>
+      </view>
+      <view>
+        <text class="content" bindtap="openUrl">2、Xcode8下的插入文档注释插件,支持在全文范围内给每一个方法和属性添加文档注释</text>
+      </view>
+      <view>
+        <text class="content" bindtap="openUrl">3、Spotify 开源新的组件驱动的 UI 和 Content 开发工具箱</text>
+      </view>
+      <view>
+        <text class="content" bindtap="openUrl">4、自动生成 Swift Initiatextzer 的小插件。</text>
+      </view>
+    </view>
+  </scroll-view>
+  
 </view>

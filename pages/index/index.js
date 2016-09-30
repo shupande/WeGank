@@ -24,7 +24,7 @@ Page({
   },
   itemClick:function(){
     wx.navigateTo({
-      url: 'detail/detail'
+      url: '../detail/detail'
     })
   }
 })
